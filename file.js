@@ -1,7 +1,7 @@
 var http=require('http');
 var fs=require('fs');
 var url=require('url');
-//const  PORT=process.env.PORT || 5000
+const  PORT=process.env.PORT || 5000
 
 http.createServer(function(req,res)
 {
@@ -23,5 +23,5 @@ http.createServer(function(req,res)
    console.log(filename);
     return res.end();
     })
-}).listen(8585);
+}).listen(PORT);
 console.log("Sever Listening on port 8585");
